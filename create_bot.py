@@ -97,7 +97,9 @@ done = '''
 
 
 with client as cl:
-    if sys.argv[1] == "--manual" or sys.argv[1] == "-m":
+    if len(sys.argv) == 1:
+        cl.loop.run_until_complete(script_auto())
+    elif sys.argv[1] == "--manual" or sys.argv[1] == "-m":
         cl.loop.run_until_complete(script_manual())
     else:
         cl.loop.run_until_complete(script_auto())

@@ -12,7 +12,7 @@ def set_properties():
     config.set('telegram', 'telegram_id', str(telegram_id))
     telegram_hash = input("введи telegram hash: ")
     config.set('telegram', 'telegram_hash', telegram_hash)
-    with open('telegram.INI', 'w') as configfile:
+    with open(ini_path, 'w') as configfile:
         config.write(configfile)
     return [telegram_id, telegram_hash]
 
