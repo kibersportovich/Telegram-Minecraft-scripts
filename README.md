@@ -1,4 +1,8 @@
 _To simplify Telegram-Minecraft mod configuration, you can use scripts written in python._
+___
+# Requirements
+* **[api id and hash](https://core.telegram.org/api/obtaining_api_id#obtaining-api-id)**
+* **Python 3.6+**
 
 # Installation
 ```cmd
